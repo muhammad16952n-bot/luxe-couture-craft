@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // Jenkins me ek Secret Text credentials banana hai
         VERCEL_TOKEN = credentials('VERCEL_TOKEN')
     }
 
@@ -27,7 +26,6 @@ pipeline {
 
         stage('Deploy to Vercel') {
             steps {
-                echo 'Deploying to Vercel...'
                 bat "npx vercel --prod --token=%VERCEL_TOKEN%"
             }
         }
