@@ -15,11 +15,18 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Luxury Variants
+        luxury: "bg-primary text-primary-foreground hover:bg-luxury-charcoal luxury-transition luxury-shadow hover:luxury-glow",
+        gold: "bg-luxury-gold text-primary hover:bg-luxury-gold-light luxury-transition gold-shadow hover:scale-105",
+        "luxury-outline": "border-2 border-luxury-gold bg-transparent text-luxury-gold hover:bg-luxury-gold hover:text-primary luxury-transition",
+        hero: "bg-gradient-to-r from-primary to-luxury-charcoal text-primary-foreground hover:from-luxury-charcoal hover:to-primary luxury-transition luxury-shadow hover:scale-105",
+        champagne: "bg-luxury-champagne text-luxury-charcoal hover:bg-luxury-champagne/80 luxury-transition card-shadow hover:gold-shadow",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-12 text-base font-semibold",
         icon: "h-10 w-10",
       },
     },
